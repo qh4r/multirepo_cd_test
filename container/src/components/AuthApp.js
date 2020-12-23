@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from "react";
 import { mount } from "auth/AuthApp";
 import { useHistory } from "react-router-dom";
 
-export const AuthApp = () => {
+const AuthApp = () => {
   const authContainer = useRef(null);
   const history = useHistory();
 
@@ -23,3 +23,5 @@ export const AuthApp = () => {
 
   return <div ref={authContainer} />
 };
+
+export default AuthApp;
